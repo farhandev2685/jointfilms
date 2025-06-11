@@ -1,0 +1,178 @@
+/* ---------- Footer Styles ---------- */
+
+.site-footer {
+  width: 100%;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+
+  top: 150px;
+  height: 900px
+}
+
+
+
+.footer-container {
+  width: 100%;
+  background: #000;
+  height: 900px;
+  position: relative;
+  z-index: 1;
+  top: -100px;
+}
+
+/* ==== CTA Banner ==== */
+.cta-box {
+ width: 1162px;
+  margin: 100px auto 0;
+  padding: 100px 40px 60px;
+  background: #000;
+  border-top: 1px solid #EE1200;
+  border-left: 1px solid #EE1200;
+  border-right: 1px solid #EE1200;
+  border-bottom: none;
+  border-radius: 53px 53px 0 0;
+  text-align: center;
+
+  height: 400px;
+}
+
+.cta-title {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.cta-subtitle {
+  font-size: 20px;
+  opacity: 0.85;
+  color: white;
+  margin: 0 auto 32px;
+  max-width: 700px;
+  line-height: 100%;
+  width: 805px !important;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+  position: relative;
+  left: -50px;
+}
+
+.footer{
+  background-color: #000;
+  height: 1000px;
+  text-align: start;
+}
+.cta-highlight {
+  font-size: 42px;
+  font-weight: 700;
+  color: #EE1200;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.cta-btn {
+  background: linear-gradient(180deg, #EE1200 0%, #880A00 100%);
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+
+/* ==== Bottom Grey Area ==== */
+.footer-bottom {
+  background: #d9d9d9;
+  padding: 60px 0;
+  color: black;
+  margin-top: 0;
+  width: 1440px;
+  position: relative;
+  left: 35px;
+
+  height: 270px;
+
+}
+
+.footer-cols {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 3.1rem;
+  position: relative;
+  left: 30px;
+
+ 
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-logo {
+  width: 70px;
+  height: 51px;
+  margin-bottom: 12px;
+
+}
+
+.footer-description {
+  font-size: 12px;
+  width: 250px;
+  margin-bottom: 12px;
+}
+
+.footer-test{
+  position: relative;
+  left: -50px;
+}
+
+
+.read-more {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #EE1200;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+}

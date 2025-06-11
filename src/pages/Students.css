@@ -1,0 +1,114 @@
+/* -------- Students Section -------- */
+
+.students-section {
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.students-container {
+  width: 90%;
+  max-width: 1280px;
+}
+
+.students-heading {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Cards grid */
+.student-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.student-card {
+  position: relative;
+  height: 308px;
+  width: 308px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.card-meta {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.star {
+  color: #ffd700;
+}
+
+.rating {
+  font-weight: 600;
+}
+
+.category {
+  opacity: 0.8;
+}
+
+/* Testimonials Row */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.testimonial-box {
+  background: #272727;
+  border-radius: 8px;
+  padding: 24px;
+  box-sizing: border-box;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  top: -30px ;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.testimonial-author {
+  text-align: right;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .students-heading {
+    font-size: 32px;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+} 

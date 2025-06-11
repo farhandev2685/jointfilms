@@ -1,0 +1,194 @@
+/* ------------ Career Section Styles ------------- */
+
+.career-wrapper {
+  width: 1440px;
+  background: #1b1b1b; /* dark backdrop so section stands out */
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 40px;
+}
+
+.career-container {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  width: 90%;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size:20px;
+  position: relative;
+  left: 0px;
+  font-family: 'Poppins', sans-serif;  
+
+}
+
+.content{
+  background-color: black;
+  position: relative;
+  
+}
+
+/* Left side */
+.career-left {
+  flex: 1 1 550px;
+  color: #ffffff;
+  position: relative;
+  left: -50px;
+}
+
+.career-info-box {
+  border: 2px solid #ba0000;
+  border-radius: 24px;
+  padding: 40px 32px;
+  background: #333333;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  
+
+}
+
+.career-seats {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.highlight {
+  color: #ff2b2b;
+  font-weight: 700;
+}
+
+.career-offer {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+.btn.enroll2-lg {
+  background: linear-gradient(180deg, #ff2b2b 0%, #590b05 100%);
+  color: #ffffff;
+  border: none;
+  padding: 22px 60px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 60px;
+  width: 628px !important;
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+
+
+
+.btn.enroll-lg:hover {
+  transform: translateY(-3px);
+}
+
+.strike {
+  text-decoration: line-through;
+  margin-right: 6px;
+  opacity: 0.7;
+}
+
+.price {
+  font-weight: 700;
+}
+
+/* Right side */
+.career-right {
+  flex: 1 1 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.workshop-card {
+  position: relative;
+  background: #ff4a4a;
+  border-radius: 32px;
+
+
+  padding: 50px 32px 160px; /* extra bottom padding for image overlap */
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+  
+  
+}
+
+
+.tagline {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.sir-image {
+  position: absolute;
+  bottom: 0;
+ 
+  
+}
+
+@media (max-width: 900px) {
+  .career-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .career-right {
+    margin-top: 40px;
+  }
+}
+
+/* ---------- Mobile (<=768px) --------- */
+@media (max-width: 768px) {
+  .career-wrapper {
+    padding: 60px 0;
+  }
+
+  .career-container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: stretch;
+    
+  }
+
+  .career-left,
+  .career-right {
+    flex: 1 1 100%;
+  }
+
+  .career-info-box {
+    font-size: 18px;
+
+  }
+
+  .career-info-box p {
+    text-align: start;
+    position: relative;
+    left: 100px;
+  }
+
+  .career-seats {
+    font-size: 20px;
+  }
+
+  .btn.enroll-lg {
+    width: 100%;
+    padding: 18px 40px;
+    font-size: 16px;
+  }
+
+  .workshop-card {
+    max-width: 100%;
+    padding: 40px 24px 140px;
+  }
+
+  .sir-image {
+    max-width: 260px;
+  }
+}

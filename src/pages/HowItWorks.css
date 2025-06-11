@@ -1,0 +1,71 @@
+/* -------- How It Works Section -------- */
+
+.how-section {
+  width: 100%;
+  background: #000000;
+  padding: 80px 0;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.how-container {
+  width: 90%;
+  max-width: 1280px;
+}
+
+.how-heading {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  top: -70px;
+  left: -470px;
+
+}
+
+.how-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  
+  
+}
+
+.how-card {
+  background: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #EE1200;
+  border-radius: 32px;
+  background-color: #3B3B3B;  
+
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 255px;
+  width: 310px;
+  
+}
+
+.how-card.active {
+  background: linear-gradient(180deg, #EE1200 0%, #880A00 100%);
+  border: none;
+}
+
+.how-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+ 
+}
+
+.how-subtitle {
+  font-size: 20px;
+  opacity: 0.85;
+  line-height: 1.5;
+  text-align: center;
+}
