@@ -134,61 +134,112 @@
   
 }
 
-@media (max-width: 900px) {
-  .career-container {
-    flex-direction: column;
-    align-items: flex-start;
+/* ===== RESPONSIVE RULES (Career Page) ===== */
+/* Tablet ≤1024px */
+@media (max-width: 1024px) {
+  .career-wrapper {
+    width: 100% !important;
+    left: 0 !important;
   }
-  .career-right {
-    margin-top: 40px;
+  
+  .career-container {
+    gap: 40px;
   }
 }
 
-/* ---------- Mobile (<=768px) --------- */
+/* Mobile ≤768px */
 @media (max-width: 768px) {
+  .career-container {
+    flex-direction: column;
+  }
+  
+  .career-left, 
+  .career-right {
+    flex: 1 1 100% !important;
+    left: 0 !important;
+  }
+  
+  .btn.enroll2-lg {
+    width: 100% !important;
+    padding: 16px 0 !important;
+  }
+  
+  .career-info-box p {
+    left: 0 !important;
+    text-align: left !important;
+  }
+
+  /* ----- refined mobile layout (≤768px) ----- */
   .career-wrapper {
-    padding: 60px 0;
+    padding: 60px 0 40px !important;
   }
 
   .career-container {
-    flex-direction: column;
-    gap: 40px;
-    align-items: stretch;
-    
-  }
-
-  .career-left,
-  .career-right {
-    flex: 1 1 100%;
+    gap: 32px !important;
+    padding: 0 20px !important;
   }
 
   .career-info-box {
-    font-size: 18px;
-
+    padding: 32px 24px !important;
+    font-size: 18px !important;
+    line-height: 28px !important;
   }
 
-  .career-info-box p {
-    text-align: start;
-    position: relative;
-    left: 100px;
-  }
-
-  .career-seats {
-    font-size: 20px;
-  }
-
-  .btn.enroll-lg {
-    width: 100%;
-    padding: 18px 40px;
-    font-size: 16px;
+  .career-offer {
+    font-size: 18px !important;
   }
 
   .workshop-card {
-    max-width: 100%;
-    padding: 40px 24px 140px;
+    margin-top: 40px !important;
+    padding: 40px 24px 140px !important;
+  }
+
+  .tagline {
+    font-size: 12px !important;
   }
 
   .sir-image {
-    max-width: 260px;
+    max-width: 260px !important;
+  }
+}
+
+/* Small Mobile ≤480px */
+@media (max-width: 480px) {
+  .career-info-box {
+    padding: 24px 16px !important;
+  }
+  
+  .career-seats {
+    font-size: 18px !important;
+  }
+
+  /* ----- refined mobile layout (≤480px) ----- */
+  .career-wrapper {
+    padding: 50px 0 !important;
+  }
+
+  .btn.enroll2-lg {
+    font-size: 15px !important;
+    width: 100% !important;
+    padding: 14px 0 !important;
+  }
+
+  .workshop-card {
+    padding: 32px 16px 120px !important;
+  }
+
+  .sir-image {
+    max-width: 220px !important;
+  }
+}
+
+/* Minimum ≤360px */
+@media (max-width: 360px) {
+  .workshop-card {
+    padding: 24px 12px 120px !important;
+  }
+  
+  .sir-image {
+    max-width: 200px !important;
   }
 }

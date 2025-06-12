@@ -111,4 +111,75 @@
   .testimonials {
     grid-template-columns: 1fr;
   }
-} 
+}
+
+/* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+  .students-section {
+    padding: 60px 0 40px !important;
+  }
+
+  .students-heading {
+    font-size: 28px !important;
+    margin-bottom: 40px !important;
+  }
+
+  /* Cards grid */
+  .student-cards {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
+    gap: 16px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .student-card {
+    height: 220px !important;
+    width: 100% !important;
+  }
+
+  .card-title {
+    font-size: 16px !important;
+  }
+
+  .card-meta {
+    font-size: 12px !important;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .testimonial-box {
+    top: 0 !important;
+    padding: 20px !important;
+  }
+
+  .testimonial-text {
+    font-size: 13px !important;
+  }
+
+  .testimonial-author {
+    font-size: 12px !important;
+  }
+}
+
+/* ---------- Small Mobile (≤480px) ---------- */
+@media (max-width: 480px) {
+  .students-heading {
+    font-size: 22px !important;
+  }
+
+  .student-cards {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .student-card {
+    height: 200px !important;
+  }
+
+  .testimonial-box {
+    padding: 18px !important;
+  }
+}

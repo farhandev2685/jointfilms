@@ -175,17 +175,122 @@ height: 120px;
 
 /* ---------- Mobile (<=768px) --------- */
 @media (max-width: 768px) {
-  .workshop-heading {
-    font-size: 22px;
+  /* Section & container */
+  .workshop-section {
+    padding: 60px 0 40px !important;
+  }
+  .workshop-container {
+    width: 90% !important;
+    text-align: left !important;
   }
 
+  /* Headings & description */
+  .workshop-heading {
+    font-size: 28px !important;
+  }
+  .workshop-description {
+    font-size: 16px !important;
+    margin-bottom: 32px !important;
+    width: 100% !important;
+  }
+
+  /* Tabs */
   .workshop-tabs {
-    flex-direction: column;
+    flex-direction: column !important;
+  }
+  .tab {
+    width: 100% !important;
+    text-align: left !important;
+    height: auto !important;
+    padding: 16px 20px !important;
+    font-size: 18px !important;
+  }
+
+  /* Workshop tabs fix */
+  .workshop-tabs {
+    background: #222222 !important;
+    border-radius: 24px !important;
+    padding: 8px !important;
+    gap: 8px !important;
+    overflow: hidden !important; /* ensures rounded corners clip children */
   }
 
   .tab {
-    width: 100%;
-    text-align: left;
+    border-radius: 16px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .tab.active {
+    border-radius: 16px !important;
+  }
+
+  /* Lists & modules */
+  .workshop-list {
+    font-size: 18px !important;
+  }
+  .module-item {
+    padding: 16px !important;
+  }
+  .module-title {
+    font-size: 24px !important;
+  }
+  .module-sub {
+    font-size: 16px !important;
+  }
+
+  /* Mentor section */
+  .mentor-section {
+    gap: 24px !important;
+    margin: 40px 0 !important;
+  }
+  .mentor-image {
+    height: 260px !important;
+    max-width: 280px !important;
+    top: 0 !important;
+  }
+  .mentor-name {
+    font-size: 24px !important;
+  }
+  .mentor-title {
+    font-size: 16px !important;
+  }
+  .mentor-description,
+  .mentor-bullets li {
+    font-size: 15px !important;
+  }
+}
+
+/* ---------- Small Mobile (<=480px) --------- */
+@media (max-width: 480px) {
+  .workshop-heading {
+    font-size: 22px !important;
+  }
+
+  .workshop-description {
+    font-size: 14px !important;
+  }
+
+  .tab {
+    font-size: 16px !important;
+    padding: 14px 18px !important;
+  }
+
+  .module-title {
+    font-size: 20px !important;
+  }
+  .module-sub {
+    font-size: 14px !important;
+  }
+
+  .workshop-list li,
+  .workshop-audience-list li {
+    font-size: 16px !important;
+    padding: 14px 16px !important;
+  }
+
+  .mentor-image {
+    height: 200px !important;
+    max-width: 200px !important;
   }
 }
 

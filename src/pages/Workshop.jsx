@@ -65,7 +65,6 @@ const Workshop = () => {
         <div className="modules-list">
           {audience.map((text, idx) => (
             <div className="module-item" key={idx}>
-              <div className="module-title">{`Module ${idx + 1}`}</div>
               <p className="module-sub">{text}</p>
               <div className='module-subtext'></div>
             </div>
@@ -79,7 +78,6 @@ const Workshop = () => {
         <div className="modules-list">
           {reasons.map((text, idx) => (
             <div className="module-item" key={idx}>
-              <div className="module-title">{`Module ${idx + 1}`}</div>
               <p className="module-sub">{text}</p>
             </div>
           ))}

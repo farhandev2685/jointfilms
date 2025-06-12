@@ -73,3 +73,43 @@
   margin: 0;
   padding: 0 40px 0 0;
 }
+
+/* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 60px 0 40px !important;
+  }
+
+  .faq-heading {
+    font-size: 32px !important;
+    margin-bottom: 40px !important;
+    padding-left: 20px !important;
+  }
+
+  .faq-question {
+    padding: 20px 0 !important;
+    font-size: 18px !important;
+  }
+
+  .faq-answer {
+    font-size: 16px !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* ---------- Small Mobile (≤480px) ---------- */
+@media (max-width: 480px) {
+  .faq-heading {
+    font-size: 24px !important;
+    padding-left: 10px !important;
+  }
+
+  .faq-question {
+    font-size: 16px !important;
+    padding: 16px 0 !important;
+  }
+
+  .faq-answer {
+    font-size: 14px !important;
+  }
+}

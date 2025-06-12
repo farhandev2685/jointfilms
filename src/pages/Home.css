@@ -253,3 +253,122 @@ height: 51.69px;
   height: auto;
   z-index: 1;
 }
+
+
+/* =========== Mobile Responsive Rules =========== */
+/* (Only applies ≤768px) */
+
+/* ===== RESPONSIVE RULES (Home Page) ===== */
+/* Tablet ≤1024px */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 16px 40px !important;
+  }
+  
+  .hero-content {
+    left: 40px !important;
+    max-width: 80% !important;
+  }
+}
+
+/* Mobile ≤768px */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 16px 20px !important;
+    gap: 12px !important;
+  }
+
+  .navbar-left {
+    margin-bottom: 4px !important;
+  }
+
+  .nav-links {
+    position: static !important;
+    gap: 24px !important;
+    justify-content: center !important;
+    font-size: 1rem !important;
+    padding: 0 !important;
+  }
+
+  .search-box {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 8px 0 0 0 !important;
+  }
+  
+  .hero-content {
+    position: static !important;
+    margin: 60px 20px 0 !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    text-align: center !important;
+  }
+  
+  .hero-title {
+    font-size: clamp(1.8rem, 6vw, 2.4rem) !important;
+    line-height: 1.3 !important;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1rem, 4vw, 1.2rem) !important;
+    margin-bottom: 32px !important;
+  }
+  
+  .cta-buttons {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+
+  .btn {
+    width: 80% !important;
+    max-width: 320px !important;
+  }
+  
+  /* Hide decorative elements on mobile */
+  .slider-dots,
+  .frame-indicator {
+    display: none !important;
+  }
+  
+  /* Remove horizontal whitespace / scrolling */
+  html, body, .container, .home-container, .header-container {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Small Mobile ≤480px */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(1.5rem, 6vw, 2rem) !important;
+  }
+  
+  .btn {
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+  
+  html, body, .container, .home-container, .header-container {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Minimum ≤360px */
+@media (max-width: 360px) {
+  .nav-links {
+    font-size: 12px !important;
+    gap: 12px;
+  }
+  
+  html, body, .container, .home-container, .header-container {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
